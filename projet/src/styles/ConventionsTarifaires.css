@@ -1,0 +1,512 @@
+/* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+  }
+  
+  
+  .header3 {
+    background: linear-gradient(to left, #13913f,#252d24);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    width: 1700px;
+    /*left: -1%;*/
+    /*box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .logo {
+    
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  
+  .main-nav {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 5px;
+
+  }
+  
+  .nav-item.active {
+    color: #f4f7f9;
+    font-weight: bold;
+  }
+  
+  .nav-item.active::after {
+   
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #25617d;
+    border-radius: 2px;
+  }
+  
+  
+  
+  .search-input {
+    padding: 8px 12px;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 14px;
+  }
+  
+  .btn-connexion {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-connexion:hover {
+    background-color: #000;
+  }
+  
+  .app-banner {
+    background-color: #0086c3;
+    color: white;
+    padding: 15px 20px;
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .page-title {
+    color: #0086c3;
+    margin-bottom: 30px;
+    font-size: 24px;
+    border-bottom: 2px solid #0086c3;
+    padding-bottom: 10px;
+  }
+  
+  .filter-section {
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .filter-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #444;
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .filter-option {
+    background-color: #f5f5f5;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .filter-option:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .filter-option.active {
+    background-color: #0086c3;
+    color: white;
+  }
+  
+  .partner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .partner-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+  
+  .partner-logo {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    
+  }
+  
+  .partner-logo img {
+    max-height: 80px;
+    max-width: 80%;
+    object-fit: contain;
+  }
+  
+  .partner-info {
+    padding: 20px;
+  }
+  
+  .partner-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0086c3;
+    margin-bottom: 8px;
+  }
+  
+  .partner-discount {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .partner-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  
+  .partner-button {
+    width: 100%;
+    background-color: #0086c3;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .partner-button:hover {
+    background-color: #006a9c;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      gap: 15px;
+      padding: 15px;
+    }
+    
+    .main-nav {
+      width: 100%;
+      justify-content: space-around;
+      gap: 10px;
+    }
+    
+    .user-actions {
+      width: 100%;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .search-input {
+      width: 100%;
+    }
+    
+    .btn-connexion {
+      width: 100%;
+    }
+    
+    .partner-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+*/
+
+
+/* Réinitialisation des marges et paddings */
+/* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}*/
+
+body {
+  /*font-family: Arial, sans-serif;*/
+  /*color: #333;*/
+  background-color: #f5f5f5;
+}
+
+/* ================== HEADER ================== */
+.header3 {
+  background: linear-gradient(to left, #13913f, #252d24);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1700px;
+  margin: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/* ================== NAVIGATION ================== */
+.main-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color: #f4f7f9;
+  font-weight: bold;
+}
+
+/* ================== SEARCH & BUTTON ================== */
+.search-input {
+  padding: 8px 12px;
+  border: 1px solid white;
+  border-radius: 4px;
+  width: 200px;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #0086c3;
+  outline: none;
+}
+
+.btn-connexion {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-connexion:hover {
+  background-color: #000;
+}
+
+/* ================== CONTENU PRINCIPAL ================== */
+.content {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.page-title {
+  color: #0086c3;
+  font-size: 24px;
+  border-bottom: 2px solid #0086c3;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+/* ================== FILTRES ================== */
+.filter-section {
+  margin-bottom: 30px;
+  padding: 15px 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.filter-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-option {
+  background-color: #f5f5f5;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.filter-option:hover,
+.filter-option.active {
+  background-color: #0086c3;
+  color: white;
+}
+
+/* ================== PARTENAIRES ================== */
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Carte partenaire */
+.partner-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo du partenaire */
+.partner-logo {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.partner-logo img {
+  max-height: 80px;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Infos du partenaire */
+.partner-info {
+  padding: 20px;
+}
+
+.partner-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0086c3;
+  margin-bottom: 8px;
+}
+
+.partner-discount {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.partner-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+/* Bouton partenaire */
+.partner-button {
+  width: 100%;
+  background-color: #0086c3;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.partner-button:hover {
+  background-color: #006a9c;
+}
+
+/* ================== RESPONSIVE DESIGN ================== */
+@media (max-width: 1024px) {
+  .header3 {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+  }
+
+  .main-nav {
+      justify-content: center;
+      gap: 15px;
+  }
+
+  .search-input,
+  .btn-connexion {
+      width: 100%;
+      max-width: 300px;
+  }
+
+  .partner-grid {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .partner-grid {
+      grid-template-columns: 1fr;
+  }
+}

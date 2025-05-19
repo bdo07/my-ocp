@@ -1,0 +1,36 @@
+src   ->  components1 -> Footer.js 
+                         HotelCard.js
+                         SearchBar.js
+
+          data ->  hotels.js
+
+          pages ->  Attestations.js
+                    Bullestation.js
+                    ColoniesDeVacances.js
+                    ConventionsTarifaires.js
+                    Dashboard.js
+                    DonneesPersonnelles.js
+                    Estivage.js
+                    Home.js
+                    LoginForm.js
+                    Medical.js
+                    MedicalHospitalPage.js
+                    Navbar.js
+                    OffreDetail.js
+                    Reservation.js
+                    Social.js
+          styles ->  Attestations.css
+                    Bullestation.css
+                    ColoniesDeVacances.css
+                    ConventionsTarifaires.css
+                    Dashboard.css
+                    DonneesPersonnelles.css
+                    Estivage.css
+                    Home.css
+                    LoginForm.css
+                    Medical.css
+                    MedicalHospitalPage.css
+                    Navbar.css
+                    OffreDetail.css
+                    Reservation.css
+                    Social.css

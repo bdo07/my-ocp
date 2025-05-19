@@ -1,0 +1,52 @@
+.offer-detail {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .offer-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .offer-discount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 10px;
+  }
+  
+  .offer-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  

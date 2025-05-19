@@ -1,0 +1,313 @@
+
+/* Global 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: linear-gradient(to left, #0056b3, #0056b3); 
+    color: white;
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #00ff1e; 
+}
+
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+
+.page-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+
+.page-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.page-description {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+}
+
+
+.form-input {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #0073e6;
+    background-color: #fff;
+    outline: none;
+}
+
+
+select.form-input {
+    background-color: #f9f9f9;
+}
+
+
+.form-input:disabled {
+    background-color: #e6e6e6;
+    cursor: not-allowed;
+}
+
+
+.form-button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #005bb5;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .page-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+*/
+
+
+
+
+/* Global */
+body {
+    /*font-family: Arial, sans-serif;*/
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Header */
+.header4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: linear-gradient(to left, #13913f,#252d24);
+    color: white;
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    left: -1px;
+}
+
+/* Logo MyOCP */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    color: #00ff1e; /* "OCP" en vert */
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Page Container */
+.page-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Titre de la page */
+.page-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Description */
+.page-description {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Formulaire */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Champs du formulaire */
+.form-input {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #0073e6;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Select */
+select.form-input {
+    background-color: #f9f9f9;
+}
+
+/* Champs désactivés */
+.form-input:disabled {
+    background-color: #e6e6e6;
+    cursor: not-allowed;
+}
+
+/* Bouton du formulaire */
+.form-button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #005bb5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .page-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+
+
